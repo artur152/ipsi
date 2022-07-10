@@ -1,0 +1,58 @@
+/*____________________ Colors _________________*/
+$black: #000;
+$white: #fff;
+$color-cod-gray: #161616;
+$transparent-white: rgba(255, 255, 255, 0);
+$transparent-black: rgba(0, 0, 0, 0);
+
+$color_azure: #3759BB;
+$color_half_dutch_white: #FEF8DB;
+$color_silver-chalice: #A2A2A2;
+$color_silver-mercury: #E7E7E7;
+$color_silver-seashell: #F1F1F1;
+$color_silver-scorpion: #5C5C5C;
+$color_mine_shaft: #3A3939;
+$color_bright_sun: #FFDF35;
+$color_galliano: #D3A609;
+$color_supernova: #f7ce00;
+$color_golden_dream_approx: #ffdc2c;
+
+$color_mojo: #BB4E37;
+$color_torch_red_approx: #fb2539;
+$color_haiti: #0D152C;
+
+$color_cararra: #ebede7;
+$select-border: #d8d9dc;
+$color_nobel_approx: #b2b2b2;
+$color_mountain_mist_approx: #999999;
+$color_tapa_approx: #777777;
+$color_fuscous_gray_approx: #555555;
+$color_aqua_forest_approx: #57ae85;
+$color_swans_down_approx: #ddefe7;
+$color_celeste: #cccccc;
+
+// Base
+$color_primary: $color-cod-gray;
+$color_secondary: $white;
+
+
+/*____________________ Fonts _________________*/
+$font-regular:  "font-regular", sans-serif;
+$font-italic:   "font-italic", sans-serif;
+$font-light:    "font-light", sans-serif;
+$font-bold:     "font-bold", sans-serif;
+
+
+/*____________________ Wrapper  _________________*/
+$screen__xxs: 320px;
+$screen__xs: 480px;
+$screen__s: 640px;
+$screen__m: 768px;
+$screen__l: 1024px;
+$screen__lm: 900px;
+$screen__ml: 1280px;
+$screen__xl: 1180px;
+$screen__xxl: 1440px;
+
+$page-width: $screen__xl;
+$page-width-mobile: $screen__lm;

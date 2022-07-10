@@ -1,0 +1,759 @@
+// Home
+
+.remit-block {
+    h5 {
+        font-family: $font-regular;
+    }
+
+    .remit-block-list-wrapper {
+        ul {
+            font-family: $font-bold;
+
+            li {
+                font-size: 18px;
+                line-height: 40px;
+                list-style: disc;
+                list-style-position: inside;
+            }
+        }
+    }
+}
+
+.money-transfer-block {
+    background-color: $color_silver-seashell;
+
+    .money-transfer-block-item {
+        padding: 24px;
+        background-color: $color_bright_sun;
+        border-radius: 8px;
+
+        .money-transfer-block-item-title {
+            font-family: $font-bold;
+            font-size: 18px;
+            color: $color_haiti;
+            line-height: 24px;
+            margin-bottom: 16px;
+        }
+
+        .money-transfer-block-item-text {
+            color: $color_haiti;
+            line-height: 16px;
+        }
+    }
+}
+
+.country-block {
+    .country-support-block-wrapper {
+        overflow-x: auto;
+    }
+
+    .country-support-block-inner {
+        width: calc($page-width - 40px);
+    }
+
+    .to-country-title-wrapper {
+        display: flex;
+        padding-bottom: 8px;
+        margin-bottom: 24px;
+        border-bottom: 2px solid $color-cod-gray;
+
+        .to-country-title {
+            display: flex;
+            flex-direction: column;
+            align-self: end;
+            width: 25%;
+            padding-right: 10px;
+
+            h6 {
+                text-transform: uppercase;
+                margin-bottom: 0;
+            }
+
+            span {
+                font-family: $font-bold;
+                font-size: 10px;
+                line-height: 14px;
+                color: $color_silver-scorpion;
+                display: block;
+
+                &:first-of-type {
+                    margin-top: 8px;
+                }
+            }
+
+            ul {
+                font-family: $font-bold;
+                font-size: 10px;
+                line-height: 14px;
+                color: $color_silver-scorpion;
+                padding-left: 15px;
+                margin-top: 8px;
+
+                li {
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 5px;
+                        left: -10px;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background-color: $color_silver-scorpion;
+                    }
+                }
+            }
+        }
+    }
+
+    .to-country-content-wrapper {
+        padding-bottom: 20px;
+
+        .to-country-content {
+            display: flex;
+            align-items: center;
+            padding: 8px 8px 8px 16px;
+
+            &:nth-of-type(even) {
+                background-color: $color_silver-seashell;
+            }
+
+            .to-country-flag-col,
+            .to-country-checked-col {
+                width: 25%;
+            }
+
+            .to-country-flag-col {
+                display: flex;
+
+                img {
+                    max-height: 24px;
+                }
+
+                span {
+                    font-family: $font-bold;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-left: 16px;
+                }
+            }
+
+            .to-country-checked-col {
+                img {
+                    width: 18px;
+                }
+
+                span {
+                    display: block;
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 2px;
+                        width: 7px;
+                        height: 1px;
+                        background-color: $color_silver-chalice;
+                    }
+                }
+            }
+        }
+    }
+
+    .country-block-more-link {
+        a {
+            font-family: $font-bold;
+            color: $color_azure;
+            display: inline-block;
+            padding: 7px 10px;
+            border: 1px solid $color_silver-chalice;
+            border-radius: 4px;
+        }
+    }
+}
+
+@media screen and (max-width: $screen__l) {
+    .transfer {
+        .page-content {
+            margin-top: 90px;
+        }
+
+        .main-banner {
+            padding: 70px 0 80px;
+
+            .page-title {
+                h1 {
+                    font-size: 32px;
+                    line-height: 40px;
+                    text-align: center;
+                    margin-bottom: 11px;
+                }
+
+                h5 {
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: center;
+                    margin: 0 auto 16px;
+                    max-width: 60%;
+                }
+            }
+
+            .app-links {
+                text-align: center;
+
+                h6 {
+                    font-size: 12px;
+                    line-height: 16px;
+                    margin-bottom: 24px;
+                }
+
+                a {
+                    width: 150px;
+
+                    &:not(:first-of-type) {
+                        margin-left: 15px;
+                    }
+                }
+
+                .store-qr-code {
+                    display: block;
+                    margin-top: 33px;
+                }
+            }
+        }
+
+        .remit-block {
+            padding-top: 65px;
+            padding-bottom: 55px;
+
+            h3 {
+                font-size: 32px;
+            }
+
+            h5 {
+                font-size: 24px;
+            }
+
+            .remit-block-title-wrapper {
+                margin-bottom: 32px;
+            }
+        }
+
+        .money-transfer-block {
+            padding-top: 40px;
+            padding-bottom: 55px;
+
+            h3 {
+                font-size: 32px;
+                line-height: 1;
+            }
+
+            .money-transfer-block-item {
+                width: 100%;
+
+                &:not(&:last-child) {
+                    margin-bottom: 16px;
+                }
+            }
+        }
+
+        .steps-block {
+            padding: 12px 0 50px;
+
+            h3 {
+                font-size: 32px;
+                margin-bottom: 40px;
+
+                .accent {
+                    margin-top: 10px;
+                }
+            }
+
+            .steps-block-wrapper {
+                .step-block-item {
+                    width: 100%;
+                    margin-bottom: 51px;
+
+                    .step-number {
+                        font-size: 72px;
+                    }
+
+                    h4 {
+                        font-size: 24px;
+                        margin-top: 16px;
+                        margin-bottom: 12px;
+                    }
+
+                    .step-text {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .transfer-block {
+            padding: 72px 0 30px;
+
+            .transfer-block-title {
+                font-size: 32px;
+                text-align: center;
+                margin-bottom: 16px;
+            }
+
+            h4 {
+                font-size: 18px;
+                text-align: center;
+                margin-top: 0;
+                margin-bottom: 48px;
+            }
+
+            .app-links {
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .app-link {
+                    margin: 0 8px;
+
+                    &:first-of-type {
+                        margin-left: 20px;
+                    }
+
+                    &:last-of-type {
+                        margin-right: 20px;
+                    }
+
+                    img {
+                        width: 150px;
+                    }
+                }
+
+                .store-qr-code {
+                    display: block;
+                    margin-top: 35px;
+                    margin-bottom: 35px;
+
+                    img,
+                    span {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            .transfer-block-image {
+                display: flex;
+                width: 272px;
+                margin-bottom: -80px;
+
+                img {
+                    margin-top: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $screen__l) and (max-width: $screen__xxl) {
+    .transfer {
+        .main-banner {
+            padding: 60px 0;
+
+            .main-banner-text {
+                width: 100%;
+                max-width: 750px;
+            }
+
+            .page-title {
+                h1 {
+                    font-size: 60px;
+                    line-height: 66px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .app-links {
+                margin-top: 50px;
+
+                h6 {
+                    margin-bottom: 20px;
+                }
+
+                a {
+                    width: 150px;
+
+                    &:not(:first-of-type) {
+                        margin-left: 15px;
+                    }
+                }
+
+                .store-qr-code {
+                    margin-left: 30px;
+                }
+            }
+        }
+
+        .remit-block {
+            padding-top: 100px;
+            padding-bottom: 90px;
+
+            h3 {
+                font-size: 40px;
+            }
+
+            h5 {
+                font-size: 20px;
+            }
+
+            .remit-block-info-wrapper {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .remit-block-title-wrapper {
+                width: 49%;
+            }
+
+            .remit-block-list-wrapper {
+                width: 40%;
+            }
+        }
+
+        .money-transfer-block {
+            padding-top: 60px;
+            padding-bottom: 70px;
+
+            h3 {
+                font-size: 40px;
+                margin-bottom: 32px;
+            }
+
+            .money-transfer-block-items {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .money-transfer-block-item {
+                width: 25%;
+
+                &:not(&:last-child) {
+                    margin-right: 16px;
+                }
+            }
+        }
+
+        .steps-block {
+            padding: 50px 0;
+
+            h3 {
+                font-size: 40px;
+                margin-bottom: 40px;
+
+                .accent {
+                    margin-top: 14px;
+                }
+            }
+
+            .steps-block-wrapper {
+                .steps-block-step {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .step-block-item {
+                    width: 25%;
+
+                    &:not(:last-child) {
+                        &:after {
+                            left: 75%;
+                            width: 50%;
+                        }
+                    }
+
+                    .step-number {
+                        font-size: 110px;
+                    }
+
+                    h4 {
+                        margin-top: 28px;
+                        margin-bottom: 12px;
+                    }
+
+                    .step-text {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .country-block {
+            padding: 80px 0;
+
+            h3 {
+                font-size: 40px;
+                margin-bottom: 45px;
+                max-width: 635px;
+            }
+
+            .country-block-more-link {
+                margin-top: 30px;
+            }
+        }
+
+        .transfer-block {
+            padding: 80px 120px;
+
+            .transfer-block-wrapper {
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+            }
+
+            .transfer-block-title-wrapper {
+                padding-right: 40px;
+                width: 60%;
+            }
+
+            .transfer-block-title {
+                font-size: 50px;
+            }
+
+            h4 {
+                font-size: 24px;
+                margin-top: 20px;
+            }
+
+            .app-links {
+                display: flex;
+                align-items: start;
+                flex-wrap: wrap;
+                margin-top: 45px;
+
+                .app-link {
+                    margin-right: 25px;
+
+                    &:last-child {
+                        margin-right: 45px;
+                    }
+
+                    img {
+                        width: 150px;
+                    }
+                }
+
+                .store-qr-code {
+                    margin-top: 15px;
+                }
+            }
+
+            .transfer-block-image {
+                display: flex;
+                width: 272px;
+                margin-bottom: -80px;
+
+                img {
+                    margin-top: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $screen__xxl) {
+    .transfer {
+        .main-banner {
+            padding: 134px 0 114px;
+
+            .main-banner-text {
+                width: 100%;
+                max-width: 750px;
+            }
+
+            .page-title {
+                h1 {
+                    font-size: 72px;
+                    line-height: 78px;
+                    margin-bottom: 33px;
+                }
+            }
+
+            .app-links {
+                margin-top: 75px;
+
+                h6 {
+                    margin-bottom: 24px;
+                }
+
+                a {
+                    width: 180px;
+
+                    &:not(:first-of-type) {
+                        margin-left: 22px;
+                    }
+                }
+
+                .store-qr-code {
+                    margin-left: 42px;
+                }
+            }
+        }
+
+        .remit-block {
+            padding-top: 120px;
+            padding-bottom: 110px;
+
+            h3 {
+                margin-bottom: 32px;
+            }
+
+            h5 {
+                margin-bottom: 0;
+            }
+
+            .remit-block-info-wrapper {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .remit-block-title-wrapper {
+                width: 49%;
+            }
+
+            .remit-block-list-wrapper {
+                width: 40%;
+            }
+        }
+
+        .money-transfer-block {
+            padding-top: 80px;
+            padding-bottom: 90px;
+
+            h3 {
+                margin-bottom: 32px;
+            }
+
+            .money-transfer-block-items {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .money-transfer-block-item {
+                width: 100%;
+                max-width: 272px;
+
+                &:not(&:last-child) {
+                    margin-right: 16px;
+                }
+            }
+        }
+
+        .steps-block {
+            padding: 60px 0 60px;
+
+            h3 {
+                margin-bottom: 48px;
+
+                .accent {
+                    margin-top: 17px;
+                }
+            }
+
+            .steps-block-wrapper {
+                .steps-block-step {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .step-block-item {
+                    width: 255px;
+
+                    &:not(:last-child) {
+                        &:after {
+                            left: 77%;
+                            width: 66%;
+                        }
+                    }
+
+                    .step-number {
+                        font-size: 144px;
+                    }
+
+                    h4 {
+                        margin-top: 36px;
+                        margin-bottom: 16px;
+                    }
+
+                    .step-text {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .country-block {
+            padding: 100px 0;
+
+            h3 {
+                margin-bottom: 65px;
+                max-width: 835px;
+            }
+
+            .country-block-more-link {
+                margin-top: 50px;
+            }
+        }
+
+        .transfer-block {
+            padding: 115px 152px;
+            background-color: $color_bright_sun;
+
+            .transfer-block-wrapper {
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+            }
+
+            .transfer-block-title-wrapper {
+                padding-right: 50px;
+                width: 60%;
+            }
+
+            .transfer-block-title {
+                font-size: 72px;
+            }
+
+            h4 {
+                margin-top: 20px;
+            }
+
+            .app-links {
+                margin-top: 45px;
+
+                .app-link {
+                    &:not(:first-child) {
+                        margin-left: 25px;
+                    }
+
+                    img {
+                        width: 180px;
+                    }
+                }
+
+                .store-qr-code {
+                    margin-left: 43px;
+                }
+            }
+
+            .transfer-block-image {
+                display: flex;
+                width: 272px;
+                margin-bottom: -115px;
+
+                img {
+                    margin-top: auto;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,215 @@
+@mixin clearfix {
+    &:before,
+    &:after {
+        display: table;
+        line-height: 0;
+        content: "";
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin visually-hidden {
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}
+
+@mixin wrapper {
+    position: relative;
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: $page-width;
+    height: 100%;
+}
+
+@mixin wrapper-mobile {
+    position: relative;
+    padding: 0 12px;
+    margin: 0 auto;
+    max-width: $page-width-mobile;
+    height: 100%;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin states() {
+    &:hover, &:focus, &:active {
+        @content;
+    }
+}
+
+@mixin appearance($val:none) {
+    -webkit-appearance: $val;
+    -moz-appearance: $val;
+    appearance: $val;
+}
+
+@mixin user-select {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+// Transition mixin
+@mixin transition($property:all, $duration:.3s, $timing:ease, $delay:0s) {
+    -webkit-transition: #{$property} #{$duration} #{$timing} #{$delay};
+    -moz-transition: #{$property} #{$duration} #{$timing} #{$delay};
+    -o-transition: #{$property} #{$duration} #{$timing} #{$delay};
+    -ms-transition: #{$property} #{$duration} #{$timing} #{$delay};
+    transition: #{$property} #{$duration} #{$timing} #{$delay};
+}
+
+@mixin placeholder($color) {
+    &::-webkit-input-placeholder {
+        @content;
+        color: $color;
+    }
+    &::-moz-placeholder {
+        @content;
+        color: $color;
+    }
+    &:-moz-placeholder {
+        @content;
+        color: $color;
+    }
+    &:-ms-input-placeholder {
+        @content;
+        color: $color;
+    }
+}
+
+
+// Transformations
+@mixin rotate($degrees) {
+    -webkit-transform: rotate($degrees);
+    -moz-transform: rotate($degrees);
+    -ms-transform: rotate($degrees);
+    -o-transform: rotate($degrees);
+    transform: rotate($degrees);
+}
+
+@mixin translateX($x) {
+    -webkit-transform: translateX($x);
+    -moz-transform: translateX($x);
+    -ms-transform: translateX($x);
+    -o-transform: translateX($x);
+    transform: translateX($x);
+}
+
+@mixin translateY($y) {
+    -webkit-transform: translateY($y);
+    -moz-transform: translateY($y);
+    -ms-transform: translateY($y);
+    -o-transform: translateY($y);
+    transform: translateY($y);
+}
+
+@mixin translate($x, $y) {
+    -webkit-transform: translate($x, $y);
+    -moz-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+    -o-transform: translate($x, $y);
+    transform: translate($x, $y);
+}
+
+
+// Transformations rotate + translate
+@mixin rotate-translate($degrees, $x, $y) {
+    -webkit-transform: rotate($degrees) translate($x, $y);
+    -moz-transform: rotate($degrees) translate($x, $y);
+    -ms-transform: rotate($degrees) translate($x, $y);
+    -o-transform: rotate($degrees) translate($x, $y);
+    transform: rotate($degrees) translate($x, $y);
+}
+
+@mixin transform-origin($y, $x) {
+    -o-transform-origin: $y $x;
+    -ms-transform-origin: $y $x;
+    -webkit-transform-origin: $y $x;
+    transform-origin: $y $x;
+}
+
+
+// Backface visibility
+// Prevent browsers from flickering when using CSS 3D transforms.
+// Default value is `visible`, but can be changed to `hidden
+@mixin box-shadow($top, $left, $blur, $spread, $color, $inset:false) {
+    @if $inset {
+        -webkit-box-shadow: inset $top $left $blur $spread $color;
+        -moz-box-shadow: inset $top $left $blur $spread $color;
+        box-shadow: inset $top $left $blur $spread $color;
+    } @else {
+        -webkit-box-shadow: $top $left $blur $spread $color;
+        -moz-box-shadow: $top $left $blur $spread $color;
+        box-shadow: $top $left $blur $spread $color;
+    }
+}
+
+
+// Arrow
+@mixin arrow($deg:0, $dir:false, $size:12px, $border-width:2px, $color: $black) {
+    &:after {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: - calc($size / 2);
+        margin-left: - calc($size / 2);
+        height: $size;
+        width: $size;
+        border-style: solid;
+        border-color: $color;
+        border-width: 0 0 $border-width $border-width;
+        @include rotate($deg);
+        @include transition($duration: 1s);
+        @content;
+
+        @if $dir == 'top' {
+            @include rotate(135deg);
+            margin-top: - $size / 3;
+        }
+        @if $dir == 'bottom' {
+            @include rotate(-45deg);
+            margin-top: - $size * 2/3;
+        }
+        @if $dir == 'left' {
+            @include rotate(45deg);
+            margin-left: - $size / 3;
+        }
+        @if $dir == 'right' {
+            @include rotate(-135deg);
+            margin-left: - $size * 2/3;
+        }
+    }
+}
+
+@mixin overlay($color: $black, $opacity: .07) {
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba($color, $opacity);
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        pointer-events: none;
+        @include transition;
+    }
+}

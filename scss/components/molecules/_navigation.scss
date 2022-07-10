@@ -1,0 +1,127 @@
+nav {
+    ul.menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        li {
+            &:last-of-type {
+                a {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    a {
+        font-family: $font-regular;
+        line-height: 1;
+        display: block;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &.nav-options {
+        a {
+            span {
+                pointer-events: none;
+            }
+        }
+    }
+
+    &.nav-tabs {
+        position: relative;
+        z-index: 1;
+
+        li {
+            &:not(:last-of-type) {
+                a {
+                    border-right: 0;
+                }
+            }
+
+            a {
+                font-family: $font-bold;
+                font-weight: bold;
+                font-size: 16px;
+                text-align: center;
+                padding: 11px 20px;
+                border: 1px solid $select-border;
+                background-color: $white;
+
+                @include states {
+                    background-color: $select-border;
+                }
+
+                &.active {
+                    color: $color_primary;
+                    border: 1px solid $color_torch_red_approx;
+
+                    @include states {
+                        background-color: $color_torch_red_approx;
+                    }
+                }
+            }
+        }
+    }
+
+    &.nav-new-feedback {
+        a {
+            font-family: $font-bold;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            padding: 12px 20px;
+            color: $color_primary;
+            background-color: $color_golden_dream_approx;
+            @include transition;
+
+            @include states {
+                color: $white;
+            }
+        }
+    }
+
+    &.footer-navigation {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 35px;
+        margin-bottom: 25px;
+        border-bottom: 1px solid $color_fuscous_gray_approx;
+
+        h6 {
+            margin: 0;
+            margin-bottom: 6px;
+            color: $color_celeste;
+        }
+
+        a {
+            font-size: 14px;
+            padding: 6px 0;
+            color: $color_mountain_mist_approx;
+
+            @include states {
+                color: $white;
+            }
+        }
+
+        .footer-navigation__menu {
+            margin-right: 5.5%;
+            @include clearfix;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            ul {
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 30px;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

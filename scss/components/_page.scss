@@ -1,0 +1,30 @@
+@import "base/_variables";
+
+
+/* Body
+-------------------------------------------------------------- */
+
+body {
+    position: relative;
+    font-family: $font-regular;
+    font-size: 14px;
+    color: $color_primary;
+    background-color: $white;
+    overflow-x: hidden;
+}
+
+.open-menu {
+    overflow: hidden;
+}
+
+.page {
+    min-height: 100vh;
+}
+
+@media screen and (min-width: $screen__m) {
+
+}
+
+@media screen and (max-width: $screen__m) {
+
+}

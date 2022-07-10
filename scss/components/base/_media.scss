@@ -1,0 +1,11 @@
+@media screen and (max-width: $screen__l) {
+    .desktop {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: $screen__l) {
+    .mobile {
+        display: none !important;
+    }
+}

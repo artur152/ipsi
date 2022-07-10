@@ -1,0 +1,96 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    @include clearfix;
+    margin: 0;
+    padding: 0;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+
+    /* Adjust font size */
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+
+    /* Font varient */
+    font-variant-ligatures: none;
+    -webkit-font-variant-ligatures: none;
+
+    /* Smoothing */
+    text-rendering: optimizeLegibility;
+    font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    @include user-select;
+}
+
+strong {
+    font-family: $font-bold;
+}
+
+p {
+    font-size: 13px;
+    line-height: 15px;
+}
+
+a,
+a *,
+a::before,
+a::after {
+    text-decoration: none;
+}
+
+a {
+    color: $color-secondary;
+}
+
+ul, ol, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Headings
+-------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-bold;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h1 {
+    font-size: 72px;
+}

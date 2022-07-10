@@ -1,0 +1,25 @@
+{
+  "name": "ipsi",
+  "version": "1.0.0",
+  "description": "Short descrition about project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "sass ./scss/styles.scss:./css/styles.css --watch"
+  },
+  "author": "Artur Yenatskyi",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-css-globbing": "^0.2.2",
+    "gulp-livereload": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^1.12.0",
+    "sass": "^1.52.2"
+  },
+  "dependencies": {
+    "bl": "^1.2.3",
+    "websocket-extensions": "^0.1.4"
+  }
+}

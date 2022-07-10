@@ -1,0 +1,1467 @@
+// Home
+
+.main-banner {
+    color: $white;
+    background-color: $color_haiti;
+
+    .main-banner-image {
+        margin-right: 2px;
+        width: 274px;
+    }
+
+    .page-title {
+        h1 {
+            letter-spacing: 0.1px;
+
+            span {
+                display: block;
+            }
+
+            .accent {
+                color: $color_bright_sun;
+            }
+        }
+
+        h5 {
+            font-family: $font-regular;
+            letter-spacing: 0.2px;
+            margin-bottom: 0;
+        }
+    }
+
+    .app-links {
+        h6 {
+            color: $color_silver-chalice;
+            text-transform: uppercase;
+            letter-spacing: 0.2px;
+        }
+
+        a {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .store-qr-code {
+            font-family: $font-bold;
+            color: $color_silver-mercury;
+            display: inline-block;
+            vertical-align: middle;
+
+            img {
+                display: inline-block;
+                vertical-align: middle;
+                width: 18px;
+                margin-right: 11px;
+            }
+
+            span {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+.security-block {
+    background-color: $color_silver-mercury;
+
+    h6 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .security-block-items {
+        display: flex;
+
+        .security-block-item {
+            text-align: center;
+            display: inline-block;
+            vertical-align: top;
+
+            img {
+                margin: 0 auto;
+            }
+
+            span {
+                font-size: 12px;
+                color: $color_silver-scorpion;
+                display: block;
+            }
+        }
+    }
+}
+
+.finance-block {
+    h3 {
+        font-family: $font-bold;
+
+        span {
+            display: block;
+        }
+    }
+
+    h5 {
+        font-family: $font-regular;
+        color: $color_silver-scorpion;
+    }
+
+    .learn-more {
+        display: flex;
+        font-family: $font-bold;
+        color: $color_azure;
+
+        img {
+            width: 16px;
+            margin-left: 12px;
+        }
+    }
+
+    .finance-block-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        background-color: $color_silver-mercury;
+        border-radius: 8px;
+
+        .finance-block-item-title {
+            line-height: 1;
+            color: $color_primary;
+            margin: 0;
+            display: block;
+        }
+
+        .finance-block-item-text {
+            font-size: 16px;
+            line-height: 24px;
+
+            ul {
+                li {
+                    list-style-type: disc;
+                }
+            }
+        }
+    }
+}
+
+.steps-block {
+    h3 {
+        font-family: $font-bold;
+        line-height: 1;
+        text-align: center;
+
+        span {
+            display: block;
+        }
+    }
+
+    .steps-block-wrapper {
+        .step-block-item {
+            position: relative;
+            text-align: center;
+
+            &:not(:last-child) {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 50px;
+                    height: 8px;
+                    border-radius: 8px;
+                    background-color: $color_silver-mercury;
+                }
+            }
+            .step-number {
+                font-family: $font-bold;
+                line-height: 1;
+                color: $color_galliano;
+            }
+
+            .step-text {
+                line-height: 1;
+            }
+        }
+    }
+}
+
+.bank-block {
+    .bank-block-image {
+        position: relative;
+        z-index: 1;
+        left: 6px;
+        width: 270px;
+        margin: 0 auto;
+    }
+
+    .bank-block-wrapper {
+        padding: 380px 100px 35px;
+        margin-top: -380px;
+        background-color: $color_bright_sun;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .bank-block-item {
+        display: flex;
+        align-items: start;
+        padding-top: 21px;
+        padding-bottom: 21px;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $color_galliano;
+        }
+
+        img {
+            width: 25px;
+            margin-top: 5px;
+            margin-right: 30px;
+        }
+
+        .bank-block-item-title {
+            color: $color_primary;
+            margin: 0 16px 0 0;
+            display: block;
+            min-width: 300px;
+            max-width: 300px;
+        }
+
+        .bank-block-item-text {
+            font-size: 16px;
+            line-height: 24px;
+
+            ul {
+                margin-top: 25px;
+                margin-left: 25px;
+
+                li {
+                    list-style-type: disc;
+                }
+            }
+        }
+    }
+}
+
+.fees-block {
+    color: $color_silver-mercury;
+    background-color: $color_primary;
+
+    .fees-block-title-wrapper {
+        h3 {
+            color: $white;
+        }
+
+        h5 {
+            font-family: $font-regular;
+            margin-top: 0;
+            margin-bottom: 0;
+            letter-spacing: 0.2px;
+        }
+    }
+
+    .fees-list {
+        h6 {
+            font-size: 18px;
+            line-height: 1;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 27px;
+        }
+
+        ul {
+            &:not(:last-child) {
+                border-bottom: 1px solid $color_mine_shaft;
+            }
+
+            .fees-list-data {
+                font-family: $font-bold;
+            }
+
+            .fees-list-text {
+                line-height: 16px;
+                display: inline-block;
+                margin-top: 3px;
+                margin-right: 20px;
+            }
+
+            .fees-list-value {
+                font-family: $font-bold;
+                font-size: 14px;
+                color: $color_primary;
+                white-space: nowrap;
+                padding: 4px 8px;
+                height: fit-content;
+                border-radius: 2px;
+
+                &.primary {
+                    background-color: $color_bright_sun;
+                }
+
+                &.secondary {
+                    color: $white;
+                    background-color: $color_mojo;
+                }
+            }
+        }
+    }
+}
+
+.advertise-block {
+    .advertise-block-wrapper {
+        padding: 0;
+
+        .advertise-block-info {
+            .advertise-block-rating {
+                display: flex;
+            }
+
+            .advertise-block-title {
+                line-height: 1;
+            }
+
+            .advertise-block-date {
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+.transfer-block {
+    background-color: $color_bright_sun;
+
+    .transfer-block-title {
+        font-family: $font-bold;
+        line-height: 1;
+        letter-spacing: -0.7px;
+    }
+
+    h4 {
+        font-family: $font-regular;
+        letter-spacing: 0.3px;
+    }
+
+    .app-links {
+        display: flex;
+        align-items: center;
+
+        .store-qr-code {
+            display: flex;
+
+            img {
+                width: 18px;
+                margin-right: 14px;
+            }
+
+            span {
+                font-family: $font-bold;
+                letter-spacing: 0.3px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $screen__l) {
+    .home-page {
+        .page-content {
+            margin-top: 90px;
+        }
+
+        .main-banner {
+            padding: 70px 0 0;
+            margin-bottom: -320px;
+
+            .page-title {
+                h1 {
+                    font-size: 32px;
+                    line-height: 40px;
+                    text-align: center;
+                    margin-bottom: 11px;
+                }
+
+                h5 {
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: center;
+                    margin-bottom: 65px;
+                }
+            }
+
+            .app-links {
+                text-align: center;
+
+                h6 {
+                    font-size: 12px;
+                    line-height: 16px;
+                    margin-bottom: 24px;
+                }
+
+                a {
+                    width: 150px;
+
+                    &:not(:first-of-type) {
+                        margin-left: 15px;
+                    }
+                }
+
+                .store-qr-code {
+                    display: block;
+                    margin-top: 33px;
+                }
+            }
+
+            .main-banner-image {
+                width: 256px;
+                margin: 85px auto 0;
+            }
+        }
+
+        .security-block {
+            padding: 320px 0 15px;
+
+            h6 {
+                font-size: 14px;
+                text-align: center;
+                text-transform: uppercase;
+                margin-top: 70px;
+                margin-bottom: 50px;
+            }
+
+            .security-block-items {
+                flex-wrap: wrap;
+
+                .security-block-item {
+                    margin: 0 5px 28px;
+                    width: calc((100% - 30px) / 3);
+
+                    img {
+                        width: auto;
+                        height: 60px;
+                    }
+
+                    span {
+                        margin-top: 19px;
+                    }
+                }
+            }
+        }
+
+        .finance-block {
+            padding: 50px 0 20px;
+
+            h3 {
+                font-size: 32px;
+                line-height: 36px;
+                margin-bottom: 16px;
+            }
+
+            h5 {
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 32px;
+            }
+
+            .learn-more {
+                font-size: 18px;
+                margin-bottom: 50px;
+            }
+
+            .finance-block-item {
+                flex-wrap: wrap;
+                padding: 24px 8px 24px 16px;
+
+                img {
+                    width: 70px;
+                    margin-right: 24px;
+                }
+
+                .finance-block-item-title {
+                    font-size: 26px;
+                    line-height: 32px;
+                    min-width: calc(100% - 100px);
+                    max-width: calc(100% - 100px);
+                }
+
+                .finance-block-item-text {
+                    margin-top: 26px;
+
+                    ul {
+                        margin-top: 24px;
+                        margin-left: 24px;
+                    }
+                }
+            }
+        }
+
+        .steps-block {
+            padding: 12px 0 50px;
+
+            h3 {
+                font-size: 32px;
+                margin-bottom: 40px;
+
+                .accent {
+                    margin-top: 10px;
+                }
+            }
+
+            .steps-block-wrapper {
+                .step-block-item {
+                    width: 100%;
+                    margin-bottom: 51px;
+
+                    &:after {
+                        display: none;
+                    }
+
+                    .step-number {
+                        font-size: 72px;
+                    }
+
+                    h4 {
+                        font-size: 24px;
+                        margin-top: 16px;
+                        margin-bottom: 12px;
+                    }
+
+                    .step-text {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .bank-block {
+            padding-top: 38px;
+
+            .bank-block-image {
+                width: 235px;
+            }
+
+            .bank-block-wrapper {
+                padding: 460px 12px 25px;
+                margin-top: -395px;
+            }
+
+            h3 {
+                font-size: 32px;
+                line-height: 1;
+                text-align: left;
+                margin-bottom: 13px;
+            }
+
+            .bank-block-item {
+                display: flex;
+                flex-wrap: wrap;
+                padding-top: 28px;
+                padding-bottom: 30px;
+                margin-bottom: 6px;
+
+                .bank-block-item-title {
+                    margin: 0 0 18px 0;
+                    min-width: calc(100% - 55px);
+                    max-width: calc(100% - 55px);
+                }
+
+                .bank-block-item-text {
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-left: 55px;
+
+                    ul {
+                        margin-top: 25px;
+                        margin-left: 25px;
+
+                        li {
+                            list-style-type: disc;
+                        }
+                    }
+                }
+            }
+        }
+
+        .fees-block {
+            padding-top: 48px;
+            padding-bottom: 32px;
+
+            .fees-block-title-wrapper {
+                h3 {
+                    font-size: 32px;
+                    line-height: 1;
+                    margin-bottom: 16px;
+                }
+
+                h5 {
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 40px;
+                }
+            }
+
+            .fees-list {
+                ul {
+                    padding-bottom: 22px;
+                    margin-bottom: 25px;
+
+                    li {
+                        line-height: 1;
+                        display: flex;
+                        justify-content: space-between;
+
+                        &:not(:last-child) {
+                            margin-bottom: 27px;
+                        }
+
+                        &:first-child {
+                            margin-bottom: 20px;
+                        }
+
+                        .fees-list-subtitle {
+                            font-size: 14px;
+                            color: $color_silver-chalice;
+                            letter-spacing: 0.2px;
+                        }
+
+                        .fees-list-data {
+                            font-size: 18px;
+                            line-height: 22px;
+                            margin-right: 10px;
+                        }
+
+                        .fees-list-text {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .advertise-block {
+            padding-bottom: 80px;
+
+            .advertise-block-wrapper {
+                margin: 0;
+                max-width: 100%;
+
+                .advertise-block-image {
+                    margin: 0 auto 50px;
+                }
+
+                .advertise-block-info {
+                    padding-left: 12px;
+                    padding-right: 12px;
+
+                    .advertise-block-rating {
+                        margin-left: 8px;
+
+                        img {
+                            width: 28px;
+                            margin-right: 12px;
+                        }
+                    }
+
+                    .advertise-block-title {
+                        font-size: 32px;
+                        margin-top: 25px;
+                        margin-bottom: 17px;
+                    }
+
+                    .advertise-block-date {
+                        font-size: 16px;
+
+                        strong {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .transfer-block {
+            padding: 72px 0 30px;
+
+            .transfer-block-title {
+                font-size: 32px;
+                text-align: center;
+                margin-bottom: 16px;
+            }
+
+            h4 {
+                font-size: 18px;
+                text-align: center;
+                margin-top: 0;
+                margin-bottom: 48px;
+            }
+
+            .app-links {
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .app-link {
+                    margin: 0 8px;
+
+                    &:first-of-type {
+                        margin-left: 20px;
+                    }
+
+                    &:last-of-type {
+                        margin-right: 20px;
+                    }
+
+                    img {
+                        width: 150px;
+                    }
+                }
+
+                .store-qr-code {
+                    display: block;
+                    margin-top: 35px;
+                    margin-bottom: 35px;
+
+                    img,
+                    span {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            .transfer-block-image {
+                display: flex;
+                width: 272px;
+                margin-bottom: -80px;
+
+                img {
+                    margin-top: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $screen__l) and (max-width: $screen__xxl) {
+    .home-page {
+        .main-banner {
+            padding: 60px 0;
+
+            .main-banner-wrapper {
+                display: flex;
+            }
+
+            .main-banner-text {
+                width: calc(100% - 274px);
+                padding-right: 150px;
+            }
+
+            .main-banner-image {
+                margin-top: -20px;
+            }
+
+            .page-title {
+                h1 {
+                    font-size: 60px;
+                    line-height: 66px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .app-links {
+                margin-top: 50px;
+
+                h6 {
+                    margin-bottom: 20px;
+                }
+
+                a {
+                    width: 150px;
+
+                    &:not(:first-of-type) {
+                        margin-left: 15px;
+                    }
+                }
+
+                .store-qr-code {
+                    margin-left: 30px;
+                }
+            }
+        }
+
+        .finance-block {
+            padding: 60px 0;
+
+            .block-title-wrap {
+                width: 62%;
+            }
+
+            h3 {
+                font-size: 40px;
+                margin-bottom: 11px;
+            }
+
+            h5 {
+                font-size: 20px;
+                line-height: 31px;
+                letter-spacing: 0.2px;
+                margin-bottom: 26px;
+            }
+
+            .learn-more {
+                font-size: 16px;
+                margin-bottom: 38px;
+            }
+
+            .finance-block-item {
+                padding: 20px;
+
+                img {
+                    width: 70px;
+                    margin-right: 30px;
+                }
+
+                .finance-block-item-title {
+                    font-size: 26px;
+                    min-width: 280px;
+                    max-width: 280px;
+                    margin-right: 18px;
+                }
+
+                .finance-block-item-text {
+                    ul {
+                        margin-top: 20px;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+
+        .security-block {
+            padding: 30px 0 35px;
+
+            h6 {
+                margin-bottom: 30px;
+            }
+
+            .security-block-items {
+                .security-block-item {
+                    width: calc(100% / 6);
+
+                    img {
+                        width: 65px;
+                    }
+
+                    span {
+                        margin-top: 19px;
+                    }
+
+                    &:not(:first-child) {
+                        margin-left: 50px;
+                    }
+                }
+            }
+        }
+
+        .steps-block {
+            padding: 50px 0;
+
+            h3 {
+                margin-bottom: 40px;
+
+                .accent {
+                    margin-top: 14px;
+                }
+            }
+
+            .steps-block-wrapper {
+                .steps-block-step {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .step-block-item {
+                    width: 25%;
+
+                    &:not(:last-child) {
+                        &:after {
+                            left: 75%;
+                            width: 50%;
+                        }
+                    }
+
+                    .step-number {
+                        font-size: 110px;
+                    }
+
+                    h4 {
+                        margin-top: 28px;
+                        margin-bottom: 12px;
+                    }
+
+                    .step-text {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .bank-block {
+            padding: 70px 0 0;
+
+            .bank-block-wrapper {
+                max-width: $page-width-mobile;
+            }
+
+            h3 {
+                font-size: 40px;
+                margin-top: 40px;
+                margin-bottom: 20px;
+            }
+
+            .bank-block-item {
+                .bank-block-item-title {
+                    font-size: 20px;
+                }
+
+                .bank-block-item-text {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+        }
+
+        .fees-block {
+            padding-top: 200px;
+            padding-bottom: 40px;
+            margin-top: -70px;
+
+            .fees-block-wrapper {
+                display: flex;
+            }
+
+            .fees-block-title-wrapper {
+                width: 50%;
+                margin-right: 5%;
+
+                h3 {
+                    font-size: 40px;
+                    line-height: 42px;
+                    margin-bottom: 20px;
+                }
+
+                h5 {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+
+            .fees-list {
+                width: 45%;
+                margin-top: 100px;
+
+                ul {
+                    padding-bottom: 22px;
+                    margin-bottom: 25px;
+
+                    li {
+                        line-height: 1;
+                        display: flex;
+                        justify-content: space-between;
+
+                        &:not(:last-child) {
+                            margin-bottom: 27px;
+                        }
+
+                        &:first-child {
+                            margin-bottom: 20px;
+                        }
+
+                        .fees-list-subtitle {
+                            font-size: 14px;
+                            color: $color_silver-chalice;
+                            letter-spacing: 0.2px;
+                        }
+
+                        .fees-list-data {
+                            font-size: 18px;
+                            margin-right: 20px;
+                        }
+
+                        .fees-list-text {
+                            line-height: 16px;
+                            display: inline-block;
+                            margin-top: 3px;
+                            margin-right: 20px;
+                        }
+
+                        .fees-list-value {
+                            font-family: $font-bold;
+                            font-size: 14px;
+                            color: $color_primary;
+                            white-space: nowrap;
+                            padding: 4px 8px;
+                            height: fit-content;
+                            border-radius: 2px;
+
+                            &.primary {
+                                background-color: $color_bright_sun;
+                            }
+
+                            &.secondary {
+                                background-color: $color_mojo;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .advertise-block {
+            .advertise-block-wrapper {
+                display: flex;
+                align-items: center;
+                max-width: $screen__xxl;
+
+                .advertise-block-image {
+                    width: 50%;
+                }
+
+                .advertise-block-info {
+                    width: 50%;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    margin-top: -8px;
+
+                    .advertise-block-rating {
+                        margin-left: 6px;
+
+                        img {
+                            width: 28px;
+                            margin-right: 12px;
+                        }
+                    }
+
+                    .advertise-block-title {
+                        font-size: 40px;
+                        margin-top: 25px;
+                        margin-bottom: 20px;
+                    }
+
+                    .advertise-block-date {
+                        strong {
+                            margin-right: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .transfer-block {
+            padding: 80px 120px;
+
+            .transfer-block-wrapper {
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+            }
+
+            .transfer-block-title-wrapper {
+                padding-right: 40px;
+                width: 60%;
+            }
+
+            .transfer-block-title {
+                font-size: 50px;
+            }
+
+            h4 {
+                font-size: 24px;
+                margin-top: 20px;
+            }
+
+            .app-links {
+                display: flex;
+                align-items: start;
+                flex-wrap: wrap;
+                margin-top: 45px;
+
+                .app-link {
+                    margin-right: 25px;
+
+                    &:last-child {
+                        margin-right: 45px;
+                    }
+
+                    img {
+                        width: 150px;
+                    }
+                }
+
+                .store-qr-code {
+                    margin-top: 15px;
+                }
+            }
+
+            .transfer-block-image {
+                display: flex;
+                width: 272px;
+                margin-bottom: -80px;
+
+                img {
+                    margin-top: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $screen__xxl) {
+    .home-page {
+        .main-banner {
+            padding: 134px 0 114px;
+
+            .main-banner-wrapper {
+                display: flex;
+            }
+
+            .main-banner-text {
+                width: calc(100% - 274px);
+                padding-right: 150px;
+            }
+
+            .main-banner-image {
+                margin-top: -38px;
+            }
+
+            .page-title {
+                h1 {
+                    font-size: 72px;
+                    line-height: 78px;
+                    margin-bottom: 33px;
+                }
+            }
+
+            .app-links {
+                margin-top: 75px;
+
+                h6 {
+                    margin-bottom: 24px;
+                }
+
+                a {
+                    width: 180px;
+
+                    &:not(:first-of-type) {
+                        margin-left: 22px;
+                    }
+                }
+
+                .store-qr-code {
+                    margin-left: 42px;
+                }
+            }
+        }
+
+        .finance-block {
+            padding: 82px 0 60px;
+
+            .block-title-wrap {
+                width: 62%;
+            }
+
+            h3 {
+                margin-bottom: 11px;
+            }
+
+            h5 {
+                line-height: 31px;
+                letter-spacing: 0.2px;
+                margin-bottom: 26px;
+            }
+
+            .learn-more {
+                font-size: 18px;
+                margin-bottom: 48px;
+            }
+
+            .finance-block-item {
+                padding: 24px;
+
+                img {
+                    width: 80px;
+                    margin-right: 40px;
+                }
+
+                .finance-block-item-title {
+                    min-width: 320px;
+                    max-width: 320px;
+                    margin-right: 18px;
+                }
+
+                .finance-block-item-text {
+                    ul {
+                        margin-top: 25px;
+                        margin-left: 25px;
+                    }
+                }
+            }
+        }
+
+        .security-block {
+            padding: 30px 0 35px;
+
+            h6 {
+                margin-bottom: 30px;
+            }
+
+            .security-block-items {
+                .security-block-item {
+                    width: calc(100% / 6);
+
+                    img {
+                        width: 65px;
+                    }
+
+                    span {
+                        margin-top: 19px;
+                    }
+
+                    &:not(:first-child) {
+                        margin-left: 50px;
+                    }
+                }
+            }
+        }
+
+        .steps-block {
+            padding: 60px 0 70px;
+
+            h3 {
+                margin-bottom: 48px;
+
+                .accent {
+                    margin-top: 17px;
+                }
+            }
+
+            .steps-block-wrapper {
+                .steps-block-step {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .step-block-item {
+                    width: 255px;
+
+                    &:not(:last-child) {
+                        &:not(:last-child) {
+                            &:after {
+                                left: 77%;
+                                width: 66%;
+                            }
+                        }
+                    }
+
+                    .step-number {
+                        font-size: 144px;
+                    }
+
+                    h4 {
+                        margin-top: 36px;
+                        margin-bottom: 16px;
+                    }
+
+                    .step-text {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .bank-block {
+            padding: 90px 0 0;
+
+            .bank-block-wrapper {
+                max-width: 1140px;
+            }
+
+            h3 {
+                margin-top: 52px;
+                margin-bottom: 28px;
+            }
+        }
+
+        .fees-block {
+            padding-top: 260px;
+            padding-bottom: 57px;
+            margin-top: -95px;
+
+            .fees-block-wrapper {
+                display: flex;
+            }
+
+            .fees-block-title-wrapper {
+                width: 470px;
+                margin-right: 108px;
+
+                h3 {
+                    line-height: 50px;
+                    margin-bottom: 29px;
+                }
+
+                h5 {
+                    line-height: 32px;
+                    margin-left: 4px;
+                }
+            }
+
+            .fees-list {
+                width: calc(100% - 470px - 108px);
+                margin-top: 135px;
+
+                ul {
+                    padding-bottom: 22px;
+                    margin-bottom: 25px;
+
+                    li {
+                        line-height: 1;
+                        display: flex;
+                        justify-content: space-between;
+
+                        &:not(:last-child) {
+                            margin-bottom: 27px;
+                        }
+
+                        &:first-child {
+                            margin-bottom: 20px;
+                        }
+
+                        .fees-list-subtitle {
+                            font-size: 14px;
+                            color: $color_silver-chalice;
+                            letter-spacing: 0.2px;
+                        }
+
+                        .fees-list-data {
+                            font-size: 18px;
+                            margin-right: 20px;
+                        }
+
+                        .fees-list-text {
+                            line-height: 16px;
+                            display: inline-block;
+                            margin-top: 3px;
+                            margin-right: 20px;
+                        }
+
+                        .fees-list-value {
+                            font-family: $font-bold;
+                            font-size: 14px;
+                            color: $color_primary;
+                            white-space: nowrap;
+                            padding: 4px 8px;
+                            height: fit-content;
+                            border-radius: 2px;
+
+                            &.primary {
+                                background-color: $color_bright_sun;
+                            }
+
+                            &.secondary {
+                                background-color: $color_mojo;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .advertise-block {
+            .advertise-block-wrapper {
+                display: flex;
+                align-items: center;
+                max-width: $screen__xxl;
+
+                .advertise-block-image {
+                    width: 56%;
+                }
+
+                .advertise-block-info {
+                    width: 44%;
+                    padding-left: 100px;
+                    padding-right: 70px;
+                    margin-top: -8px;
+
+                    .advertise-block-rating {
+                        margin-left: 6px;
+
+                        img {
+                            width: 28px;
+                            margin-right: 12px;
+                        }
+                    }
+
+                    .advertise-block-title {
+                        margin-top: 25px;
+                        margin-bottom: 20px;
+                    }
+
+                    .advertise-block-date {
+                        strong {
+                            margin-right: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .transfer-block {
+            padding: 115px 152px;
+            background-color: $color_bright_sun;
+
+            .transfer-block-wrapper {
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+            }
+
+            .transfer-block-title-wrapper {
+                padding-right: 50px;
+                width: 60%;
+            }
+
+            .transfer-block-title {
+                font-size: 72px;
+            }
+
+            h4 {
+                margin-top: 20px;
+            }
+
+            .app-links {
+                margin-top: 45px;
+
+                .app-link {
+                    &:not(:first-child) {
+                        margin-left: 25px;
+                    }
+
+                    img {
+                        width: 180px;
+                    }
+                }
+
+                .store-qr-code {
+                    margin-left: 43px;
+                }
+            }
+
+            .transfer-block-image {
+                display: flex;
+                width: 272px;
+                margin-bottom: -115px;
+
+                img {
+                    margin-top: auto;
+                }
+            }
+        }
+    }
+}

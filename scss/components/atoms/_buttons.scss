@@ -1,0 +1,44 @@
+.primary-button {
+    font-family: $font-bold;
+    font-size: 16px;
+    color: $color-primary;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0;
+    text-align: center;
+    padding: 18px 30px;
+    margin: 0;
+    background-color: $color_supernova;
+    border-radius: 30px;
+    border: 1px solid $color_supernova;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: $transparent-black;
+
+    @include appearance;
+    @include transition($duration: 0.5s);
+    @include border-radius(50px);
+    @include box-shadow(1px, 15px, 28px, 1px, rgba($color_supernova, 0.2));
+
+    &.active {
+        color: $white;
+        background-color: $color_primary;
+    }
+
+    &:disabled {
+        background-color: $color_nobel_approx;
+        color: $color_celeste;
+        cursor: auto;
+    }
+}
+
+button {
+    @extend .primary-button;
+}
+
+@media screen and (max-width: $screen__xl) {
+    .primary-button {
+        padding: 9px 30px;
+    }
+}
