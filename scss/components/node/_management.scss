@@ -1,0 +1,215 @@
+//
+//  Management page
+//  -----------------------------------------
+
+.transaction-block {
+    .transaction-block-title-wrapper {
+        width: 100%;
+
+        h3 {
+            margin-bottom: 0;
+        }
+    }
+
+    .transaction-block-info-wrapper {
+        width: 100%;
+
+        h5 {
+            font-family: $font-regular;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.products-block {
+    .products-block-item {
+        padding: 24px;
+        margin-bottom: 16px;
+        background-color: $color_silver-seashell;
+        border-radius: 8px;
+
+        .products-block-item-title {
+            font-family: $font-bold;
+            font-size: 18px;
+            line-height: 24px;
+            color: $color_haiti;
+            margin-bottom: 16px;
+        }
+
+        .products-block-item-text {
+            color: $color_haiti;
+        }
+    }
+
+    .link-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $screen__l) {
+    .management {
+        .transaction-block {
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+            .transaction-block-title-wrapper {
+                h3 {
+                    font-size: 32px;
+                    line-height: 1;
+                    margin-bottom: 32px;
+                }
+            }
+        }
+
+        .products-block {
+            padding-top: 50px;
+            padding-bottom: 70px;
+
+            h3 {
+                font-size: 32px;
+                line-height: 1;
+                margin-bottom: 32px;
+            }
+
+            .products-block-item {
+                @include transition();
+
+                &.toggle-products {
+                    display: none;
+
+                    &.visible {
+                        display: block;
+                    }
+                }
+            }
+
+            .link-button {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $screen__l) and (max-width: $screen__xxl) {
+    .management {
+        .transaction-block {
+            padding-top: 80px;
+            padding-bottom: 60px;
+
+            .transaction-block-wrapper {
+                display: flex;
+            }
+
+            .transaction-block-title-wrapper {
+                margin-right: 50px;
+
+                h3 {
+                    font-size: 40px;
+                    margin-bottom: 32px;
+                }
+            }
+        }
+
+        .products-block {
+            padding-top: 60px;
+            padding-bottom: 84px;
+
+            h3 {
+                font-size: 40px;
+                margin-bottom: 32px;
+            }
+
+            .products-block-items {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .products-block-item {
+                width: calc(25% - 12px);
+                max-width: 272px;
+
+                &:not(:nth-of-type(4n)) {
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $screen__xxl) {
+    .management {
+        .main-banner {
+            padding: 135px 0 115px;
+
+            .main-banner-text {
+                width: 100%;
+                max-width: 750px;
+            }
+
+            .page-title {
+                h1 {
+                    font-size: 72px;
+                    line-height: 78px;
+                    margin-bottom: 33px;
+                }
+            }
+
+            .app-links {
+                margin-top: 75px;
+
+                h6 {
+                    margin-bottom: 24px;
+                }
+
+                a {
+                    width: 180px;
+
+                    &:not(:first-of-type) {
+                        margin-left: 22px;
+                    }
+                }
+
+                .store-qr-code {
+                    margin-left: 42px;
+                }
+            }
+        }
+
+        .transaction-block {
+            padding-top: 100px;
+            padding-bottom: 80px;
+
+            .transaction-block-wrapper {
+                display: flex;
+            }
+
+            .transaction-block-title-wrapper {
+                max-width: 560px;
+                margin-right: 110px;
+            }
+
+            .transaction-block-info-wrapper {
+                max-width: calc(100% - 670px);
+            }
+        }
+
+        .products-block {
+            padding-top: 80px;
+            padding-bottom: 120px;
+
+            .products-block-items {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .products-block-item {
+                width: 25%;
+                max-width: 272px;
+
+                &:not(:nth-of-type(4n)) {
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+}

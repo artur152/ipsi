@@ -11,9 +11,11 @@
 
 @import "components/molecules/navigation.scss";
 
-@import "components/node/home.scss";
+@import "components/node/nodes";
+@import "components/node/home";
 @import "components/node/about";
 @import "components/node/transfer";
+@import "components/node/management";
 
 @import "components/organisms/header.scss";
 @import "components/organisms/footer.scss";

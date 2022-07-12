@@ -146,8 +146,6 @@
 }
 
 .show-more {
-    white-space: nowrap;
-
     .more {
         font-size: 13px;
         border-bottom-style: dotted;
@@ -174,6 +172,14 @@
             }
         }
     }
+}
+
+.link-button {
+    font-family: $font-bold;
+    color: $color_azure;
+    text-align: center;
+    border: 1px solid $color_silver-chalice;
+    border-radius: 4px;
 }
 
 .product-rate {
@@ -437,14 +443,23 @@
     display: none;
 }
 
+@media screen and (max-width: $screen__l) {
+    .wrapper {
+        @include wrapper-mobile;
+    }
+
+    .link-button {
+        display: block;
+        padding: 14px 8px 15px;
+    }
+}
+
 @media screen and (min-width: $screen__l) {
     .wrapper {
         @include wrapper;
     }
-}
 
-@media screen and (max-width: $screen__l) {
-    .wrapper {
-        @include wrapper-mobile;
+    .link-button {
+        padding: 6px 8px 7px;
     }
 }

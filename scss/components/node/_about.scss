@@ -1,4 +1,6 @@
-// Home
+//
+//  About page
+//  -----------------------------------------
 
 .main-banner {
     .main-banner-image--about {
@@ -165,35 +167,47 @@
             }
         }
     }
+}
 
-    .contact-info-location {
-        color: $color_azure;
-        display: inline-block;
-        border: 1px solid $color_silver-chalice;
-        border-radius: 5px;
+@media screen and (max-width: $screen__m) {
+    .about {
+        .main-banner {
+            .main-banner-text--about {
+                .show-more-heading {
+                    max-width: 100%;
+
+                    .text-row {
+                        height: 0;
+                        overflow-y: hidden;
+
+                        &.visible {
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        .team-block {
+            .team-block-item {
+                width: 50%;
+            }
+        }
     }
 }
 
 @media screen and (max-width: $screen__l) {
     .about {
-        .page-content {
-            margin-top: 90px;
-        }
-
         .main-banner {
-            padding-top: 70px;
-            padding-bottom: 70px;
-
             .main-banner-text--about {
                 h1 {
-                    font-size: 32px;
-                    margin-bottom: 8px;
+                    text-align: left;
                 }
 
                 h5 {
-                    font-size: 18px;
-                    line-height: 24px;
-                    margin-bottom: 16px;
+                    text-align: left;
+                    margin: 0;
+                    margin-bottom: 15px;
                 }
 
                 .show-more {
@@ -308,22 +322,6 @@
                 line-height: 24px;
                 margin-bottom: 25px;
             }
-
-            .contact-info-location {
-                text-align: center;
-                width: 100%;
-                padding: 13px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: $screen__m) {
-    .about {
-        .team-block {
-            .team-block-item {
-                width: 50%;
-            }
         }
     }
 }
@@ -331,8 +329,6 @@
 @media screen and (min-width: $screen__l) and (max-width: $screen__xxl) {
     .about {
         .main-banner {
-            padding: 50px 0;
-
             .main-banner-image--about {
                 .main-banner-image-inner {
                     span {
@@ -496,10 +492,7 @@
                 margin-bottom: 25px;
             }
 
-            .contact-info-location {
-                text-align: center;
-                width: 100%;
-                padding: 13px;
+            .link-button {
                 margin-top: auto;
             }
         }
@@ -509,8 +502,6 @@
 @media screen and (min-width: $screen__xxl) {
     .about {
         .main-banner {
-            padding: 110px 0 120px;
-
             .main-banner-image--about {
                 .main-banner-image-inner {
                     span {
@@ -533,7 +524,9 @@
                         line-height: 31px;
 
                         span {
-                            margin-bottom: 35px;
+                            &:not(:last-of-type) {
+                                margin-bottom: 35px;
+                            }
                         }
                     }
                 }
@@ -687,8 +680,9 @@
                 }
             }
 
-            .contact-info-location {
-                padding: 7px 10px;
+            .link-button {
+                display: inline-block;
+                margin-top: auto;
             }
         }
     }
